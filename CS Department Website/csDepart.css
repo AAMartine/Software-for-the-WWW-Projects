@@ -1,0 +1,151 @@
+
+body {
+    background: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-bottom: 10vw;
+    clear: both;
+}
+
+.card h2{
+    font-size: 1vw;
+    font-family: Verdana;
+    background-color:blue;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box{
+    float: left;
+    width: 23%;
+    padding: 0 10px;
+    margin-left: 10px;
+    display: table-row;
+}
+
+p{
+    font-family: "Georgia";
+    font-size: 1.75vw;
+    color: black;
+    text-align: justify;
+    padding: 2vw 3vw 3vw 3vw;
+}
+
+.card p{
+    font-size: 1vw;
+    color: black;
+    text-align: justify;
+    padding:0vw 0.5vw 1vw 0.5vw;
+}
+
+h1{
+    color: blue;
+}
+
+.shadow{
+    text-shadow: 0vw 0.3vw 0.4vw black;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.img-logo{
+    width:150px;
+    height: 111px;
+}
+
+.img-left{
+    float: left;
+}
+
+.img-ov{
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: block;
+}
+
+.img-right{
+    float: right;
+    padding: 2vw;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu{
+    margin-left: 30vw;
+}
+
+div.menu a{
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+div.menu a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightsteelblue;
+}
+
+.footer p {
+    display: inline-flex;
+    font-size: 1vw;
+    text-align: left;
+    margin-left: 1vw;
+    color: blue;
+}
+
+.row {
+    margin: 0 -5px;
+    display: table-cell;
+}
+
+.blue-box{
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+    display: table-cell;
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+        width: 45%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
