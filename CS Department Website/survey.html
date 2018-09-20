@@ -20,11 +20,12 @@
         <a href="survey.html">SURVEY</a>
     </div>
 </header>
+
 <main>
     <h1>
         Please provide feedback of your recent visit at GMU
     </h1>
-    <form autocomplete="on">
+       <form autocomplete="on">
         <label>Username</label>
         <input type="text" required placeholder="Enter your username" autofocus/>
 
@@ -38,12 +39,12 @@
         </div>
 
         <div class="input-left">
-        <label>State</label>
-        <input type="text" required placeholder="State"/>
+            <label>State</label>
+            <input type="text" required placeholder="State"/>
         </div>
         <div class="input-right">
-        <label>Zip</label>
-        <input type="text" required placeholder="Zip"/>
+            <label>Zip</label>
+            <input type="text" required placeholder="Zip"/>
         </div>
         <label>Telephone number</label>
         <input type="tel" required placeholder="705-000-0000"/>
@@ -53,10 +54,6 @@
 
         <label>URL</label>
         <input type="url" placeholder="www.mysite.com"/>
-
-        <label>Date of Survey</label>
-        <input type="date" required placeholder="Today's date"/>
-
         <label>What do you like most about the campus?</label>
         <div class="divCheck">
             <label class="container">Students
@@ -87,36 +84,80 @@
 
         <label>How did you become interested in GMU?</label>
         <div class="divCheck">
-        <label class="container">Friends
-            <input type="radio" name="cmpIn" value="Friends"/>
-            <span class="checkmark radio"></span>
-        </label>
-        <label class="container">Television
-            <input type="radio" name="cmpIn" value="television"/>
-            <span class="checkmark radio"></span>
-        </label>
-        <label class="container">Internet
-            <input type="radio" name="cmpIn" value="internet"/>
-            <span class="checkmark radio"></span>
-        </label>
-        <label class="container">Other
-            <input type="radio" name="cmpIn" value="other"/>
-            <span class="checkmark radio"></span>
+            <label class="container">Friends
+                <input type="radio" name="cmpIn" value="Friends"/>
+                <span class="checkmark radio"></span>
+            </label>
+            <label class="container">Television
+                <input type="radio" name="cmpIn" value="television"/>
+                <span class="checkmark radio"></span>
+            </label>
+            <label class="container">Internet
+                <input type="radio" name="cmpIn" value="internet"/>
+                <span class="checkmark radio"></span>
+            </label>
+            <label class="container">Other
+                <input type="radio" name="cmpIn" value="other"/>
+                <span class="checkmark radio"></span>
+            </label>
+        </div>
+
+        <div class="input-left">
+        <label>
+            High School Graduation Month
+            <input list="gradMonth" name="gradMonth" placeholder="Select a Month">
+                <datalist id="gradMonth">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
         </label>
         </div>
+        <div class="input-right">
+            <label>
+                High School Graduation Year
+            <input type="text" placeholder="Graduation Year"/>
+            </label>
+        </div>
+
+        <label>
+            How likely would you recommend GMU to other students?
+            <select>
+                <option value="Very likely"> Very likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+            </select>
+        </label>
+
+        <label>Date of Survey
+            <input type="date" required placeholder="Today's date"/>
+        </label>
+
         <label>
             Additional comments
-        <textarea>
-        </textarea>
+            <textarea>
+            </textarea>
         </label>
         <input type="submit" value="Submit">
     </form>
+
 </main>
 
 <div class="footer">
-    <p><em>&copy Copyright 2018</em>
+    <p>&copy Copyright 2018
+        <br/>
+        <br />
+        Designed by Anne Martine Augustin
     </p>
-
     <a href="https://www2.gmu.edu/"> <img class="img-logo img-right" src="mason-logo.png" alt="Logo Black GMU"/>
     </a>
 </div>

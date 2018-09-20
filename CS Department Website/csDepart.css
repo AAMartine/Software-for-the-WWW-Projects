@@ -33,7 +33,7 @@ h1{
     color: blue;
 }
 
-input{
+input, select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -255,14 +255,12 @@ textarea{
 .input-left{
     width: 47%;
     float: left;
-    background: transparent;
     padding-left: 0;
 }
 
 .input-right{
     width: 47%;
     float: right;
-    background: transparent;
     padding-right: 0;
 }
 
