@@ -2,9 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GMU CS Department</title>
+    <link rel="stylesheet" type="text/css" href="csDepart.css"/>
+    <link rel="icon" type="img/ico" href="favicon.ico"/>
 </head>
 <body>
+<header class="blue-box clearfix">
+    <a href="#"> <img class="img-logo img-left" src="mason-logo.png" alt="Logo Black GMU"/>
+    </a>
+    <h1 class="shadow">
+        <strong> Department of Computer Sciences</strong>
+    </h1>
+
+    <div class="menu">
+        <a href="index.html">ABOUT</a>
+        <a href="survey.html">SURVEY</a>
+    </div>
+</header>
+<main>
+    <h1>
+        Please provide feedback of your recent visit at GMU
+    </h1>
+    <form autocomplete="on">
+        <label>Username</label>
+        <input type="text" required placeholder="Enter your username" autofocus/>
+
+        <div class="input-left">
+            <label>Street Address</label>
+            <input type="text" required placeholder="Street Address">
+        </div>
+        <div class="input-right">
+            <label>City</label>
+            <input type="text" required placeholder="City"/>
+        </div>
+
+        <div class="input-left">
+        <label>State</label>
+        <input type="text" required placeholder="State"/>
+        </div>
+        <div class="input-right">
+        <label>Zip</label>
+        <input type="text" required placeholder="Zip"/>
+        </div>
+        <label>Telephone number</label>
+        <input type="tel" required placeholder="705-000-0000"/>
+
+        <label>Email</label>
+        <input type="email" required placeholder="name@email.com"/>
+
+        <label>URL</label>
+        <input type="url" placeholder="www.mysite.com"/>
+
+        <label>Date of Survey</label>
+        <input type="date" required placeholder="Today's date"/>
+
+        <label>What do you like most about the campus?</label>
+        <div class="divCheck">
+            <label class="container">Students
+                <input type="checkbox" name="std" value="Students"/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Location
+                <input type="checkbox" name="loc" value="location"/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Campus
+                <input type="checkbox" name="cmp" value="Campus"/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Atmosphere
+                <input type="checkbox" name="atm" value="atmosphere"/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Dorm Rooms
+                <input type="checkbox" name="dm" value="dorm rooms"/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Sports
+                <input type="checkbox" name="sport" value="Sports"/>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <label>How did you become interested in GMU?</label>
+        <div class="divCheck">
+        <label class="container">Friends
+            <input type="radio" name="cmpIn" value="Friends"/>
+            <span class="checkmark radio"></span>
+        </label>
+        <label class="container">Television
+            <input type="radio" name="cmpIn" value="television"/>
+            <span class="checkmark radio"></span>
+        </label>
+        <label class="container">Internet
+            <input type="radio" name="cmpIn" value="internet"/>
+            <span class="checkmark radio"></span>
+        </label>
+        <label class="container">Other
+            <input type="radio" name="cmpIn" value="other"/>
+            <span class="checkmark radio"></span>
+        </label>
+        </div>
+        <label>
+            Additional comments
+        <textarea>
+        </textarea>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+<div class="footer">
+    <p><em>&copy Copyright 2018</em>
+    </p>
+
+    <a href="https://www2.gmu.edu/"> <img class="img-logo img-right" src="mason-logo.png" alt="Logo Black GMU"/>
+    </a>
+</div>
 
 </body>
 </html>
